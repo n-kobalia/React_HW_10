@@ -1,0 +1,32 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(125, 216, 219);
+}
+
+.img{
+  border-radius: 50%;
+  border: 5px solid white;
+  animation-name: spin;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+.name{
+  color: rgb(58, 32, 32);
+}
+
+.bio{
+  font-size: 20px;
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
